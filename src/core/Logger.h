@@ -2,9 +2,6 @@
 
 #include <QObject>
 #include <QString>
-#include <QQmlEngine>
-#include <QTimer>
-#include <QElapsedTimer>
 
 class Logger : public QObject
 {

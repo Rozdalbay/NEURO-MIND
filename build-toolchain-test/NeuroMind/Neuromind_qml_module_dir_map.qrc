@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/NeuroMind">C:/Brain/build-toolchain-test/NeuroMind</file>
-
-  </qresource>
-</RCC>

@@ -2,8 +2,6 @@
 
 #include <QObject>
 #include <QTimer>
-#include <QQmlEngine>
-#include <QElapsedTimer>
 
 class SimulationClock : public QObject
 {
@@ -44,7 +42,6 @@ private:
     static constexpr int kBaseIntervalMs = 50;
 
     QTimer m_timer;
-    QElapsedTimer m_elapsed;
     double m_speed = 1.0;
     double m_totalElapsed = 0.0;
     bool m_running = false;

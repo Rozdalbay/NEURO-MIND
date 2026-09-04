@@ -1,5 +1,0 @@
-#!/temp/x32-4.7.2-posix-sjlj-r8/prefix/opt/bin\python2.7.exe
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()

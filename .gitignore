@@ -1,0 +1,44 @@
+# CMake build trees
+/build/
+/build-*/
+/out/
+/cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+*.cmake.user
+
+# Compiled artifacts
+*.a
+*.dll
+*.dll.a
+*.exe
+*.lib
+*.obj
+*.o
+*.pdb
+
+# Qt Creator and QML tooling
+*.pro.user
+*.qmlc
+*.jsc
+.qmake.stash
+
+# Local runtime data
+/brain_save.json
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Toolchains and downloaded SDKs belong outside the repository
+/Tools/

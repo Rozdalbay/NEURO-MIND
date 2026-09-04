@@ -2,8 +2,6 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickStyle>
-#include <QIcon>
-#include <QDebug>
 #include <cstdio>
 
 #include "app/ApplicationController.h"
