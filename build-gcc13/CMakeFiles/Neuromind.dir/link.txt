@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Neuromind.dir/objects.a
-C:\Brain\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\Neuromind.dir/objects.a @CMakeFiles\Neuromind.dir\objects1.rsp
-C:\Brain\Tools\mingw1310_64\bin\g++.exe -Wl,--whole-archive CMakeFiles\Neuromind.dir/objects.a -Wl,--no-whole-archive -o Neuromind.exe -Wl,--out-implib,libNeuromind.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Neuromind.dir\linkLibs.rsp

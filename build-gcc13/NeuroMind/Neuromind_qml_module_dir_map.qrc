@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/NeuroMind">C:/Brain/build-gcc13/NeuroMind</file>
-
-  </qresource>
-</RCC>

@@ -1,8 +1,6 @@
 #pragma once
 
 #include <QObject>
-#include <QQmlEngine>
-#include <QTimer>
 #include <QVariantList>
 #include <QVariantMap>
 #include <QColor>
@@ -160,8 +158,6 @@ private:
 
     SimulationClock *m_clock = nullptr;
     Logger *m_logger = nullptr;
-    QTimer m_simulationTimer;
-
     bool m_isOnline = false;
     bool m_isDreamMode = false;
     bool m_isPaused = false;

@@ -410,7 +410,7 @@ void ApplicationController::exitDreamMode()
 
 void ApplicationController::resetSimulation()
 {
-    m_clock->stop();
+    m_clock->reset();
     m_isOnline = false;
     m_isDreamMode = false;
     m_isPaused = false;
