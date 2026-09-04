@@ -1,0 +1,14 @@
+-rootPath
+C:/Brain
+-cmake-output
+-output-file
+C:/Brain/build-toolchain-test/.qt_plugins/Qt6_QmlPlugins_Imports_Neuromind.cmake
+-importPath
+C:/Brain/build-toolchain-test/NeuroMind
+-importPath
+C:/Brain/build-toolchain-test
+-importPath
+C:/Qt/6.6.3/mingw_64/./qml
+-qrcFiles
+C:/Brain/build-toolchain-test/.rcc/qmake_NeuroMind.qrc
+C:/Brain/build-toolchain-test/.rcc/Neuromind_raw_qml_0.qrc

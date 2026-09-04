@@ -1,0 +1,169 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "NeuralNetworkItem",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "qreal"
+                        },
+                        {
+                            "name": "y",
+                            "type": "qreal"
+                        }
+                    ],
+                    "name": "neuronAt",
+                    "returnType": "int"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "neurons",
+                    "notify": "neuronsChanged",
+                    "read": "neurons",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "write": "setNeurons"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "synapses",
+                    "notify": "synapsesChanged",
+                    "read": "synapses",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "write": "setSynapses"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "zoom",
+                    "notify": "viewChanged",
+                    "read": "zoom",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qreal",
+                    "user": false,
+                    "write": "setZoom"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "offsetX",
+                    "notify": "viewChanged",
+                    "read": "offsetX",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qreal",
+                    "user": false,
+                    "write": "setOffsetX"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "offsetY",
+                    "notify": "viewChanged",
+                    "read": "offsetY",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qreal",
+                    "user": false,
+                    "write": "setOffsetY"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "selectedNeuronId",
+                    "notify": "selectionChanged",
+                    "read": "selectedNeuronId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setSelectedNeuronId"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "hoveredNeuronId",
+                    "notify": "selectionChanged",
+                    "read": "hoveredNeuronId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setHoveredNeuronId"
+                }
+            ],
+            "qualifiedClassName": "NeuralNetworkItem",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "neuronsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "synapsesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "viewChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "selectionChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "NeuralNetworkItem.h",
+    "outputRevision": 68
+}

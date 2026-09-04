@@ -1,0 +1,18 @@
+module NeuroMind
+typeinfo Neuromind.qmltypes
+prefer :/qt/qml/NeuroMind/
+Main 1.0 qml/Main.qml
+StartupScreen 1.0 qml/StartupScreen.qml
+MainWindow 1.0 qml/MainWindow.qml
+GlowPanel 1.0 qml/components/GlowPanel.qml
+NeonButton 1.0 qml/components/NeonButton.qml
+StatusIndicator 1.0 qml/components/StatusIndicator.qml
+AnimatedNumber 1.0 qml/components/AnimatedNumber.qml
+DashboardPanel 1.0 qml/dashboard/DashboardPanel.qml
+BrainVisualization 1.0 qml/brain/BrainVisualization.qml
+MemoryPanel 1.0 qml/memory/MemoryPanel.qml
+EmotionPanel 1.0 qml/emotions/EmotionPanel.qml
+DreamPanel 1.0 qml/dream/DreamPanel.qml
+SettingsPanel 1.0 qml/settings/SettingsPanel.qml
+LogPanel 1.0 qml/settings/LogPanel.qml
+

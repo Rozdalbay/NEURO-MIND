@@ -1,0 +1,107 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "Logger",
+            "enums": [
+                {
+                    "isClass": true,
+                    "isFlag": false,
+                    "name": "Level",
+                    "values": [
+                        "Debug",
+                        "Info",
+                        "Warning",
+                        "Error"
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "level",
+                            "type": "Level"
+                        }
+                    ],
+                    "name": "log",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "log",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "clear",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "logText",
+                    "notify": "logTextChanged",
+                    "read": "logText",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "logCount",
+                    "notify": "logTextChanged",
+                    "read": "logCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "Logger",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "logTextChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Logger.h",
+    "outputRevision": 68
+}

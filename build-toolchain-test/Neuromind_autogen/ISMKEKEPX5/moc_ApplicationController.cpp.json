@@ -1,0 +1,520 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "ApplicationController",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "initialize",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "createDemoNetwork",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "neuronId",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "selectNeuron",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "deselectNeuron",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "neuronId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "amount",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "stimulateNeuron",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "amount",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "stimulateRandom",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "createMemory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memoryId",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "activateMemory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memoryId",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "deleteMemory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memoryId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "newName",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "renameMemory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memoryId",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getMemoryDetails",
+                    "returnType": "QVariantMap"
+                },
+                {
+                    "access": "public",
+                    "name": "enterDreamMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "exitDreamMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "resetSimulation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "saveBrain",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "loadBrain",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "clock",
+                    "read": "clock",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "SimulationClock*",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "logger",
+                    "read": "logger",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "Logger*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "isOnline",
+                    "notify": "onlineChanged",
+                    "read": "isOnline",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "isDreamMode",
+                    "notify": "dreamModeChanged",
+                    "read": "isDreamMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "simulationSpeed",
+                    "notify": "simulationSpeedChanged",
+                    "read": "simulationSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false,
+                    "write": "setSimulationSpeed"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "neuronCount",
+                    "notify": "statsChanged",
+                    "read": "neuronCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "synapseCount",
+                    "notify": "statsChanged",
+                    "read": "synapseCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "activeNeuronCount",
+                    "notify": "statsChanged",
+                    "read": "activeNeuronCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "networkActivity",
+                    "notify": "statsChanged",
+                    "read": "networkActivity",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "neurons",
+                    "notify": "neuronsChanged",
+                    "read": "neurons",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "name": "synapses",
+                    "notify": "synapsesChanged",
+                    "read": "synapses",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "name": "emotions",
+                    "notify": "emotionsChanged",
+                    "read": "emotions",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "name": "memories",
+                    "notify": "memoriesChanged",
+                    "read": "memories",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "name": "selectedNeuronId",
+                    "notify": "selectedNeuronChanged",
+                    "read": "selectedNeuronId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 14,
+                    "name": "memoryCount",
+                    "notify": "memoriesChanged",
+                    "read": "memoryCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 15,
+                    "name": "dreamMemoryCount",
+                    "notify": "dreamModeChanged",
+                    "read": "dreamMemoryCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 16,
+                    "name": "isPaused",
+                    "notify": "pausedChanged",
+                    "read": "isPaused",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "ApplicationController",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "onlineChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "dreamModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "simulationSpeedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "statsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "neuronsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "synapsesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "emotionsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "memoriesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "selectedNeuronChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "pausedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "neuronId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "activation",
+                            "type": "double"
+                        }
+                    ],
+                    "name": "neuronActivated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "memoryId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "dreamMemoryActivated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "name": "onSimulationTick",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ApplicationController.h",
+    "outputRevision": 68
+}

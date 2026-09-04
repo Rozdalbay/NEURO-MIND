@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/NeuroMind">
+    <file alias="qmldir">C:/Brain/build-gcc13/NeuroMind/qmldir</file>
+  </qresource>
+</RCC>
+

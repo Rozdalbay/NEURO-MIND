@@ -1,0 +1,16 @@
+C:/Brain/build-gcc13/CMakeFiles/Neuromind.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_automoc_json_extraction.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_qmltyperegistration.dir
+C:/Brain/build-gcc13/CMakeFiles/all_qmltyperegistrations.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_qmllint.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_qmllint_json.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_qmllint_module.dir
+C:/Brain/build-gcc13/CMakeFiles/all_qmllint.dir
+C:/Brain/build-gcc13/CMakeFiles/all_qmllint_json.dir
+C:/Brain/build-gcc13/CMakeFiles/all_qmllint_module.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_tooling.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_qmlimportscan.dir
+C:/Brain/build-gcc13/CMakeFiles/edit_cache.dir
+C:/Brain/build-gcc13/CMakeFiles/rebuild_cache.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_autogen_timestamp_deps.dir
+C:/Brain/build-gcc13/CMakeFiles/Neuromind_autogen.dir

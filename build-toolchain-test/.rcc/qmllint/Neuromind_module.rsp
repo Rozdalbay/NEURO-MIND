@@ -1,0 +1,10 @@
+-I
+C:/Brain/build-toolchain-test
+-I
+C:/Qt/6.6.3/mingw_64/./qml
+--resource
+C:/Brain/build-toolchain-test/.rcc/qmake_NeuroMind.qrc
+--resource
+C:/Brain/build-toolchain-test/.rcc/Neuromind_raw_qml_0.qrc
+--module
+NeuroMind
