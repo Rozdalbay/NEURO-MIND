@@ -1,5 +1,0 @@
-#!/temp/x32-480-posix-dwarf-r2/mingw32/opt/bin\python2.7.exe
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()
